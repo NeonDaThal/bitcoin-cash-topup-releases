@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "appName": "Bitcoin Cash Topup",
+  "androidAppLabel": "BCH Topups",
+  "platform": "android",
+  "packageName": "app.bitcoincashtopup.android",
+  "releaseChannel": "alpha-test",
+  "latest": {
+    "versionCode": 5,
+    "versionName": "0.1.4-alpha-update-available-test",
+    "releaseTag": "v0.1.0-alpha",
+    "releaseTitle": "Bitcoin Cash Topup update available test",
+    "releaseDate": "2026-07-08",
+    "releasePageUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/tag/v0.1.0-alpha",
+    "apkDownloadUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/download/v0.1.0-alpha/BitcoinCashTopup-v0.1.0-alpha.apk",
+    "apkFileName": "BitcoinCashTopup-v0.1.0-alpha.apk",
+    "apkSha256": "0a34564595130caf33eab30cb167646e2d99bbdc541cf722a42e49073c5e0c96",
+    "signingCertificateSha256": "C2:25:E9:49:AA:31:7A:DE:F1:D3:F8:F8:DF:09:35:25:09:0F:AA:B1:F8:3A:9E:F2:37:05:20:32:8C:B0:B3:45",
+    "isPrerelease": true,
+    "releaseNotes": [
+      "Test metadata for checking the update available dialog.",
+      "This is not a real public app release.",
+      "Do not download or install from this test prompt."
+    ]
+  },
+  "minimumSupportedVersionCode": 1,
+  "mandatoryUpdate": false,
+  "updateMessage": "A test Bitcoin Cash Topup update is available.",
+  "installWarning": "This is test update metadata only. Do not treat this as a real public update."
+}
