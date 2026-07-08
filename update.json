@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "appName": "Bitcoin Cash Topup",
+  "androidAppLabel": "BCH Topups",
+  "platform": "android",
+  "packageName": "app.bitcoincashtopup.android",
+  "releaseChannel": "alpha",
+  "latest": {
+    "versionCode": 1,
+    "versionName": "0.1.0-alpha",
+    "releaseTag": "v0.1.0-alpha",
+    "releaseTitle": "Bitcoin Cash Topup v0.1.0-alpha",
+    "releaseDate": "2026-07-08",
+    "releasePageUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/tag/v0.1.0-alpha",
+    "apkDownloadUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/download/v0.1.0-alpha/BitcoinCashTopup-v0.1.0-alpha.apk",
+    "apkFileName": "BitcoinCashTopup-v0.1.0-alpha.apk",
+    "apkSha256": "0a34564595130caf33eab30cb167646e2d99bbdc541cf722a42e49073c5e0c96",
+    "signingCertificateSha256": "C2:25:E9:49:AA:31:7A:DE:F1:D3:F8:F8:DF:09:35:25:09:0F:AA:B1:F8:3A:9E:F2:37:05:20:32:8C:B0:B3:45",
+    "isPrerelease": true,
+    "releaseNotes": [
+      "First non-production Android APK test release.",
+      "For testing only.",
+      "Do not use for production merchant operations or high-value funds."
+    ]
+  },
+  "minimumSupportedVersionCode": 1,
+  "mandatoryUpdate": false,
+  "updateMessage": "A new Bitcoin Cash Topup update is available.",
+  "installWarning": "This is a non-production alpha release. Back up important wallet recovery information before updating or reinstalling."
+}
