@@ -1,3 +1,4 @@
+$updateJson = @'
 {
   "schemaVersion": 1,
   "appName": "Bitcoin Cash Topup",
@@ -6,27 +7,37 @@
   "packageName": "app.bitcoincashtopup.android",
   "releaseChannel": "alpha",
   "latest": {
-    "versionCode": 5,
-    "versionName": "0.1.1-alpha",
-    "releaseTag": "v0.1.1-alpha",
-    "releaseTitle": "Bitcoin Cash Topup v0.1.1-alpha",
-    "releaseDate": "2026-07-10",
-    "releasePageUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/tag/v0.1.1-alpha",
-    "apkDownloadUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/download/v0.1.1-alpha/BitcoinCashTopup-v0.1.1-alpha.apk",
-    "apkFileName": "BitcoinCashTopup-v0.1.1-alpha.apk",
-    "apkSha256": "a3f44dc2bf7eccd29670b48a0eccaf40a77b07963bb7bd70f5e8c0b05a0ac1cb",
+    "versionCode": 7,
+    "versionName": "0.1.2-alpha",
+    "releaseTag": "v0.1.2-alpha",
+    "releaseTitle": "Bitcoin Cash Topup v0.1.2-alpha",
+    "releaseDate": "2026-08-04",
+    "releasePageUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/tag/v0.1.2-alpha",
+    "apkDownloadUrl": "https://github.com/NeonDaThal/bitcoin-cash-topup-releases/releases/download/v0.1.2-alpha/BitcoinCashTopup-v0.1.2-alpha.apk",
+    "apkFileName": "BitcoinCashTopup-v0.1.2-alpha.apk",
+    "apkSha256": "6850bdefcd5846596acd7cec467c16e4462688d2ec00a0d5c90a8714a001e1ad",
     "signingCertificateSha256": "C2:25:E9:49:AA:31:7A:DE:F1:D3:F8:F8:DF:09:35:25:09:0F:AA:B1:F8:3A:9E:F2:37:05:20:32:8C:B0:B3:45",
     "isPrerelease": true,
     "releaseNotes": [
-      "Added a manual in-app Check for Updates flow.",
-      "Added public update metadata support using update.json.",
-      "Added update status handling for up-to-date, update available, newer test build, update channel mismatch, and check failed states.",
-      "Added a styled update result dialog with installed/latest version details, release notes, safety notice, and verification hash.",
-      "Added an Open Download Page action that directs users to the GitHub Release page."
+      "Added automatic once-per-day in-app update checking.",
+      "Added an Update Available state in the drawer menu.",
+      "Improved the update dialog with release notes, installation guidance, safety notes, and a Download Update action.",
+      "Added Android PIN setup and unlock interface.",
+      "Added secure Android PIN storage and PIN lock session lifecycle handling.",
+      "Added custom Topup and Cash-out icons.",
+      "Polished Bluetooth receipt layout and improved receipt text rendering.",
+      "Added merchant report image export, PDF export, print preview, and native Android report printing.",
+      "Added QR scan and upload tools for treasury send.",
+      "Polished Cash-out and cash-on-hand screens.",
+      "Added and updated translation strings across supported languages."
     ]
   },
   "minimumSupportedVersionCode": 1,
   "mandatoryUpdate": false,
-  "updateMessage": "A new Bitcoin Cash Topup update is available.",
-  "installWarning": "This is a non-production alpha release. Back up important wallet recovery information before updating or reinstalling."
+  "updateMessage": "A new alpha version of BCH Topups is available.",
+  "installWarning": "Only install APKs from the official Bitcoin Cash Topup GitHub release page. Android may show a safety warning because BCH Topups is installed outside Google Play."
 }
+'@
+
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText((Resolve-Path ".\update.json"), $updateJson, $utf8NoBom)
