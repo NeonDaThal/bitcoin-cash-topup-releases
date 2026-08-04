@@ -1,4 +1,3 @@
-$updateJson = @'
 {
   "schemaVersion": 1,
   "appName": "Bitcoin Cash Topup",
@@ -37,7 +36,3 @@ $updateJson = @'
   "updateMessage": "A new alpha version of BCH Topups is available.",
   "installWarning": "Only install APKs from the official Bitcoin Cash Topup GitHub release page. Android may show a safety warning because BCH Topups is installed outside Google Play."
 }
-'@
-
-$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
-[System.IO.File]::WriteAllText((Resolve-Path ".\update.json"), $updateJson, $utf8NoBom)
